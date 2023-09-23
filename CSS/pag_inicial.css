@@ -9,6 +9,8 @@
   body > div.Banner > div:nth-child(1) > img, body > div.Banner > div:nth-child(2) > img
   {
     float: left;
+    width: 50%;
+    height: auto;
   }
 
   div.menu ul {
@@ -26,7 +28,6 @@
   div.menu li a {
     display: block;
     color: white;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
@@ -35,16 +36,34 @@
     background-color: #111;
   }
 
+  body > div.menu > ul > li:nth-child(2) > a,
+  body > div.menu > ul > li:nth-child(3) > a,
+  body > div.menu > ul > li:nth-child(4) > a
+{
+  margin-left: 19em;
+}
+
   .container {
     padding: 16px;
     background-color: white;
+    margin-top: 14em;
   }
   
-  body > div.cadastro > form > div > h1
+  body > div.cadastro
   {
     text-align: center;
     font-size: 25px;
+    margin-top: 8em;
+    font-weight: bold;
   }
+
+  body > div.cadastro > form > div > h1
+  {
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+
+
   /* Full-width input fields */
   input[type=email], input[type=password] {
     width: 100%;
@@ -76,6 +95,7 @@
     cursor: pointer;
     width: 100%;
     opacity: 0.9;
+    font-size: 20px;
   }
   
   .registerbtn:hover {
@@ -92,9 +112,9 @@
     background-color: #f1f1f1;
     text-align: center;
   }
-
-  footer
+  body > footer > div
   {
-    
-
+    word-spacing: 50px;
+    margin-left: 35em;
+    cursor: pointer;
   }
