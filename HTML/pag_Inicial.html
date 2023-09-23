@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/reset.css">
     <link rel="stylesheet" href="/CSS/pag_inicial.css">
+    <link rel="stylesheet" href="/CSS/menu.css">
     <link rel="stylesheet" href="/fontawesome-free-6.4.2-web/css/all.min.css">
     <title>Site de Comida</title>
 </head>
@@ -13,8 +14,9 @@
         <ul>
             <li><a href="quemsomos">Quem Somos</a></li>
             <li><a href="cardapio ">Cardápio</a></li>
-            <li><a href="Localização">Localização</a></li>
+            <li><a href="localização">Localização</a></li>
             <li><a href="login">Login</a></li>
+            <li><a href="cadastro">Cadastro</a></li>
         </ul>
     </div>
 
@@ -33,22 +35,55 @@
             <div class="container">
               <h1>Cadastro</h1>
               <hr>
-              <label for="email"><b>Usuário</b></label>
+              <label for="email"></label>
               <input type="email" placeholder="Email" name="email" id="email" required>
           
-              <label for="psw"><b>Senha</b></label>
+              <label for="psw"></label>
               <input type="password" placeholder="Senha" name="psw" id="psw" required>
 
               <button type="submit" class="registerbtn">Cadastrar</button>
             </div>
             </form>
     </div>
+
     <footer>
-        <div class="icones">
-            <i class="fa-brands fa-facebook fa-2x"></i>
-            <i class="fa-brands fa-instagram fa-2x"></i>
-            <i class="fa-solid fa-envelope  fa-2x"></i>
+        <div class="page">
+            <div class="box">
+            <a href="#" class="btn instagram">
+                <div class="icones">
+                    <i class="fa-brands fa-instagram fa-2x"></i>
+                    <span>Instagram</span>
+                </div>
+               
+            </a>
+
+            <a href="#" class="btn email">
+                <div class="icones">
+                    <i class="fa-solid fa-envelope  fa-2x"></i>
+                    <span>E-mail</span>
+                </div>
+               
+            </a>
+
+            <a href="#" class="btn facebook">
+                <div class="icones">
+                    <i class="fa-brands fa-facebook  fa-2x"></i>
+                    <span>Facebook</span>
+                </div>
+               
+            </a>
+
+            <a href="#" class="btn github">
+                <div class="icones">
+                    <i class="fa-brands fa-github  fa-2x"></i>
+                    <span>Git Hub</span>
+                </div>
+                
+            </a>
+
+            </div>
         </div>
     </footer>
+
 </body>
 </html>

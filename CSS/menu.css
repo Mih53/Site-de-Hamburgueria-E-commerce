@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-family*/
+    }
+    
+    body > div.Banner > div:nth-child(1) > img, body > div.Banner > div:nth-child(2) > img
+    {
+      float: left;
+      width: 50%;
+      height: auto;
+    }
+  
+    div.menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    div.menu li {
+      float: left;
+    }
+    
+    div.menu li a {
+      display: block;
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    div.menu li a:hover {
+      background-color: #111;
+    }
+  
+    body > div.menu > ul > li:nth-child(2) > a,
+    body > div.menu > ul > li:nth-child(3) > a,
+    body > div.menu > ul > li:nth-child(4) > a,
+    body > div.menu > ul > li:nth-child(5) > a
+  {
+    margin-left: 13em;
+  }
+  

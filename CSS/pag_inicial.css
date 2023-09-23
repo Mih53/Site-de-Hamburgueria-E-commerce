@@ -1,48 +1,9 @@
 * {
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*font-family*/
   }
-  
-/*.banner img {
-    width: 40em;
-    height: 10em;
-  }*/
-  body > div.Banner > div:nth-child(1) > img, body > div.Banner > div:nth-child(2) > img
-  {
-    float: left;
-    width: 50%;
-    height: auto;
-  }
-
-  div.menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  div.menu li {
-    float: left;
-  }
-  
-  div.menu li a {
-    display: block;
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  div.menu li a:hover {
-    background-color: #111;
-  }
-
-  body > div.menu > ul > li:nth-child(2) > a,
-  body > div.menu > ul > li:nth-child(3) > a,
-  body > div.menu > ul > li:nth-child(4) > a
-{
-  margin-left: 19em;
-}
-
   .container {
     padding: 16px;
     background-color: white;
@@ -61,31 +22,32 @@
   {
     margin-top: 2em;
     margin-bottom: 1em;
+    font-size: 40px;
   }
 
 
-  /* Full-width input fields */
+  
   input[type=email], input[type=password] {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
     display: inline-block;
     border: none;
-    background: #f1f1f1;
+    background: #f8f5f5;
   }
   
   input[type=email]:focus, input[type=password]:focus {
-    background-color: #ddd;
+    background-color: #f8f5f5;
     outline: none;
   }
   
-  /* Overwrite default styles of hr */
+ 
   hr {
     border: 1px solid #f1f1f1;
     margin-bottom: 25px;
   }
   
-  /* Set a style for the submit button */
+
   .registerbtn {
     background-color: #04AA6D;
     color: white;
@@ -101,20 +63,111 @@
   .registerbtn:hover {
     opacity: 1;
   }
-  
-  /* Add a blue text color to links */
-  a {
-    color: dodgerblue;
-  }
-  
-  /* Set a grey background color and center the text of the "sign in" section */
+
   .signin {
     background-color: #f1f1f1;
     text-align: center;
   }
-  body > footer > div
-  {
-    word-spacing: 50px;
-    margin-left: 35em;
-    cursor: pointer;
+ 
+  .page{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(220deg, rgb(159, 245, 138) 25%, rgb(154, 243, 191) 74%);
   }
+
+  a{
+    text-decoration: none;
+  }
+.box .btn{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 0 5px;
+  overflow: hidden;
+  background-color: #201a1a;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgb(8, 43, 17);
+  transition: all 0.3s ease-out;
+}
+
+.box .btn:hover{
+  width: 180px;
+}
+
+.box .btn .icon
+{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  color: #111;
+  transition: all 0.3s ease-out;
+}
+
+body > footer > div > div > a.btn.instagram > div,
+body > footer > div > div > a.btn.email > div,
+body > footer > div > div > a.btn.facebook > div,
+body > footer > div > div > a.btn.github > div
+{
+  margin-left: 1em;
+  margin-top: 1em;
+  color: rgb(166, 231, 140);
+}
+body > footer > div > div > a.btn.instagram > div:hover,
+body > footer > div > div > a.btn.email > div:hover,
+body > footer > div > div > a.btn.facebook > div:hover,
+body > footer > div > div > a.btn.github > div:hover
+{
+  color: rgb(51, 255, 0);
+  transition: all 0.7s ease-out;
+  margin-left: 2em;
+  margin-top: 0;
+}
+
+body > footer > div > div > a.btn.instagram > div > span,
+body > footer > div > div > a.btn.email > div > span,
+body > footer > div > div > a.btn.facebook > div > span,
+body > footer > div > div > a.btn.github > div > span
+{
+  color: #e1f8ef;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.box .btn .icon i{
+  font-size: 20px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+
+.box .btn:hover .icon i{
+  color: #f1f1f1;
+}
+
+.box .btn span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 18px;
+  transition: all 0.5s ease-out;
+}
+
+.instagram:hover span{
+  color: #5684e6;
+}
