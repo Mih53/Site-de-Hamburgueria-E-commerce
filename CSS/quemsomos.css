@@ -5,6 +5,90 @@
     /*font-family*/
   }
 
+  body > div.texto > p
+  {
+    font-size: 20px;
+    text-align: center;
+    line-height: 35px;
+
+  }
+
+  .flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 5em;
+  }
+  
+  .flex-container > div {
+    width: auto;
+    height: 25em;
+    margin: 10px;
+    text-align: center;
+    line-height: 55px;
+    font-size: 20px;
+    background-color: rgba(125, 250, 125, 0.1);
+    color: #011807
+  }
+
+  body > div.texto > div > div:nth-child(1)
+  {
+    border-radius: 15px;
+    border: 1px solid rgb(4, 221, 112);
+  }
+
+  body > div.texto > div > div:nth-child(2)
+  {
+    border-radius: 15px;
+    border: 1px solid rgb(21, 184, 102);
+  }
+
+  body > div.texto > div > div:nth-child(3)
+  {
+    border-radius: 15px;
+    border: 1px solid rgb(4, 221, 112);
+  }
+
+  @media screen and (max-width: 600px) {
+    body > div.texto > p
+    {
+      font-size: 20px;
+      text-align: justify;
+      line-height: 25px;
+  
+    }
+    .flex-container {
+    display: inline-block;
+    flex-wrap: nowrap;
+    }
+    body > div.texto > div > div:nth-child(1),
+    body > div.texto > div > div:nth-child(2),
+    body > div.texto > div > div:nth-child(3)
+    {
+      height: auto;
+    }
+  }
+  
+  @media screen and (min-width: 601px) and (max-width: 1200px) {
+    /* Seus estilos para essa faixa de largura de tela aqui */
+    body > div.texto > p
+    {
+      font-size: 20px;
+      text-align: justify;
+      line-height: 25px;
+  
+    }
+    .flex-container {
+    display: inline-block;
+    flex-wrap: nowrap;
+    }
+    body > div.texto > div > div:nth-child(1),
+    body > div.texto > div > div:nth-child(2),
+    body > div.texto > div > div:nth-child(3)
+    {
+      height: auto;
+    }
+  }
+
 body > div.voltar > a > i
 {
     margin-top: 1em;
