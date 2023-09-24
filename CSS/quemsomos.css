@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-family*/
+  }
+
+body > div.voltar > a > i
+{
+    margin-top: 1em;
+    margin-left: 1em;
+    color: black;
+}
+body > div.texto > p:nth-child(2)
+{
+    border-style: solid;
+    border-radius: 50em;
+    border-color: aqua;
+}
+body > div.texto > h2
+{
+    margin-top: 2em;
+    text-align: center;
+    font-size: 40px;
+}
+
+body > div.texto > p
+{
+    margin-top: 3em;
+    font-size: 20px;
+    text-align: center;
+}

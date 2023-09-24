@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/reset.css">
-    <link rel="stylesheet" href="/CSS/pag_inicial.css">
+    <link rel="stylesheet" href="/CSS/cadastro.css">
     <link rel="stylesheet" href="/CSS/menu.css">
     <link rel="stylesheet" href="/fontawesome-free-6.4.2-web/css/all.min.css">
-    <title>Site de Comida</title>
+    <title>Cadastro</title>
 </head>
 <body>
-    <div class="menu">
-        <ul>
-            <li><a href="quemsomos">Quem Somos</a></li>
-            <li><a href="cardapio ">Cardápio</a></li>
-            <li><a href="localização">Localização</a></li>
-            <li><a href="login">Login</a></li>
-            <li><a href="cadastro">Cadastro</a></li>
-        </ul>
-    </div>
+    <div class="topnav" id="myTopnav">
+        <a href="/HTML/quemsomos.html">Quem Somos</a>
+        <a href="/HTML/login.html">Login</a>
+        <a href="/HTML/cadastro.html" class="active">Cadastro</a>
+        <a href="#contact">Cardápio</a>
+        <a href="#about">Localização</a>
+        <a href="#pedido">Pedido</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
 
     <div class="Banner">
         <div class="img">
@@ -30,16 +32,29 @@
         </div>
     </div>
 
+    <div class="voltar">
+        <a href="/HTML/login.html"><i class="fa-solid fa-arrow-left fa-2x"></i></a>
+    </div>
+
     <div class="cadastro">
         <form action="/action_page.php">
             <div class="container">
               <h1>Cadastro</h1>
               <hr>
+              <label for="name"></label>
+              <input type="text" placeholder="Nome Completo" name="name" id="name" required>
+
+              <label for="tel"></label>
+              <input type="number" placeholder="Telefone (xx xxxxx-xxxx)" name="tel" id="tel" required>
+
               <label for="email"></label>
               <input type="email" placeholder="Email" name="email" id="email" required>
           
               <label for="psw"></label>
               <input type="password" placeholder="Senha" name="psw" id="psw" required>
+
+              <label for="psw-repeat"><b></b></label>
+              <input type="password" placeholder="Confirme a Senha" name="psw-repeat" id="psw-repeat" required>
 
               <button type="submit" class="registerbtn">Cadastrar</button>
             </div>
@@ -49,12 +64,11 @@
     <footer>
         <div class="page">
             <div class="box">
-            <a href="#" class="btn instagram">
+            <a href="https://www.instagram.com/mihh_amaral/"  target="_blank" class="btn instagram">
                 <div class="icones">
                     <i class="fa-brands fa-instagram fa-2x"></i>
                     <span>Instagram</span>
                 </div>
-               
             </a>
 
             <a href="#" class="btn email">
@@ -65,7 +79,7 @@
                
             </a>
 
-            <a href="#" class="btn facebook">
+            <a href="https://www.facebook.com/milena.amaral.737/" target="_blank" class="btn facebook">
                 <div class="icones">
                     <i class="fa-brands fa-facebook  fa-2x"></i>
                     <span>Facebook</span>
@@ -73,17 +87,29 @@
                
             </a>
 
-            <a href="#" class="btn github">
+            <a href="https://github.com/Mih53/Site_Comida.git" target="_blank" class="btn github">
                 <div class="icones">
                     <i class="fa-brands fa-github  fa-2x"></i>
                     <span>Git Hub</span>
                 </div>
                 
             </a>
-
+            </div>
+            <div>
+                <p>© Copyright 2023 - Milena Amaral</p>
             </div>
         </div>
     </footer>
 
+<script>
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
 </body>
 </html>

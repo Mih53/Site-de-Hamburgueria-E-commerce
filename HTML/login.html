@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/reset.css">
+    <link rel="stylesheet" href="/CSS/login.css">
+    <link rel="stylesheet" href="/CSS/menu.css">
+    <link rel="stylesheet" href="/fontawesome-free-6.4.2-web/css/all.min.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="/HTML/quemsomos.html">Quem Somos</a>
+        <a href="/HTML/login.html" class="active">Login</a>
+        <a href="/HTML/cadastro.html">Cadastro</a>
+        <a href="#contact">Cardápio</a>
+        <a href="#about">Localização</a>
+        <a href="#pedido">Pedido</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+    <div class="Banner">
+        <div class="img">
+            <img src="/IMG/DELICIA DE SABORES 4.png" alt="5 Terre">
+        </div>
+        
+        <div class="img">
+            <img src="/IMG/DELICIA DE SABORES 4.png" alt="Norther Lights">
+        </div>
+    </div>
+    <div class="voltar">
+        <a href="/HTML/cadastro.html"><i class="fa-solid fa-arrow-left fa-2x"></i></a>
+    </div>
+
+    <div class="cadastro">
+        <form action="/action_page.php">
+            <div class="container">
+              <h1>Login</h1>
+              <hr>
+              <label for="email"></label>
+              <input type="email" placeholder="Email" name="email" id="email" required>
+          
+              <label for="psw"></label>
+              <input type="password" placeholder="Senha" name="psw" id="psw" required>
+
+              <button type="submit" class="registerbtn">Login</button>
+              <div class="container signin">
+                <p>Não tem Cadastro?<a href="/HTML/cadastro.html">Crie uma Conta</a></p>
+              </div>
+            </div>
+            </form>
+    </div>
+
+    <footer>
+        <div class="page">
+            <div class="box">
+            <a href="https://www.instagram.com/mihh_amaral/"  target="_blank" class="btn instagram">
+                <div class="icones">
+                    <i class="fa-brands fa-instagram fa-2x"></i>
+                    <span>Instagram</span>
+                </div>
+            </a>
+
+            <a href="#" class="btn email">
+                <div class="icones">
+                    <i class="fa-solid fa-envelope  fa-2x"></i>
+                    <span>E-mail</span>
+                </div>
+            </a>
+
+            <a href="https://www.facebook.com/milena.amaral.737/" target="_blank" class="btn facebook">
+                <div class="icones">
+                    <i class="fa-brands fa-facebook  fa-2x"></i>
+                    <span>Facebook</span>
+                </div>
+            </a>
+
+            <a href="https://github.com/Mih53/Site_Comida.git" target="_blank" class="btn github">
+                <div class="icones">
+                    <i class="fa-brands fa-github  fa-2x"></i>
+                    <span>Git Hub</span>
+                </div>
+            </a>
+            </div>
+            <div>
+                <p>© Copyright 2023 - Milena Amaral</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+</body>
+</html>
