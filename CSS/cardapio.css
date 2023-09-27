@@ -4,23 +4,68 @@
     box-sizing: border-box;
     /*font-family*/
   }
-  body > div.voltar > a > i
-  {
-    color: black;
-    margin-left: 2em;
-  }
-
-  body > div.flex-container > div {
+  
+  .flex-container {
     display: flex;
     flex-wrap: nowrap;
-    background-color: DodgerBlue;
-  }
+    }
   
   .flex-container > div {
-    background-color: #f1f1f1;
-    width: 100px;
-    margin: 10px;
+    border-radius: 15px;
+    border: 1px solid rgb(4, 221, 112);
+    width: 15em;
+    margin: 2em;
     text-align: center;
-    line-height: 75px;
-    font-size: 30px;
   }
+  body > section > div:nth-child(1) > div:nth-child(1),
+  body > section > div:nth-child(2) > div:nth-child(1)
+  {
+    transition: transform 0.2s; 
+  }
+
+  body > section > div:nth-child(1) > div:nth-child(1):hover,
+  body > section > div:nth-child(1) > div:nth-child(2):hover,
+  body > section > div:nth-child(1) > div:nth-child(3):hover,
+  body > section > div:nth-child(1) > div:nth-child(4):hover,
+  body > section > div:nth-child(1) > div:nth-child(5):hover,
+  body > section > div:nth-child(2) > div:nth-child(1):hover,
+  body > section > div:nth-child(2) > div:nth-child(2):hover,
+  body > section > div:nth-child(2) > div:nth-child(3):hover,
+  body > section > div:nth-child(2) > div:nth-child(4):hover,
+  body > section > div:nth-child(2) > div:nth-child(5):hover
+  {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+  body > section > div.flex-container > div
+  {
+    width: 15em;
+  }
+
+  body > section > div.flex-container > div > img
+  {
+    width: 60%;
+    height: auto;
+    margin-top: 2em;
+    transition: transform 0.2s; 
+  }
+
+  body > section > div.flex-container > div > img:hover
+  {
+    transform: scale(1.2);
+  }
+
+  body > section > div.flex-container > div > H2
+ {
+  margin-left: 0.5em;
+  margin-top: 1em;
+  font-size: 25px;
+
+ }
+ body > section > div.flex-container > div > p
+ {
+  color: rgb(121, 207, 35);
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+

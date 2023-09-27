@@ -4,12 +4,6 @@
     box-sizing: border-box;
     /*font-family*/
   }
-body > div.voltar > a > i
-  {
-    margin-left: 2em;
-    margin-top: 1em;
-    color: #111;
-  }
     body > div.cadastro > form > div
     {
       margin-top: -10em;

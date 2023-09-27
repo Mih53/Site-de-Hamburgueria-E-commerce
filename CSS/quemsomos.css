@@ -89,12 +89,6 @@
     }
   }
 
-body > div.voltar > a > i
-{
-    margin-top: 1em;
-    margin-left: 1em;
-    color: black;
-}
 body > div.texto > p:nth-child(2)
 {
     border-style: solid;

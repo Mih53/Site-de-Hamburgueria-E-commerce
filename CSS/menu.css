@@ -181,3 +181,10 @@ body > div.cadastro > form > div > div > p > a:hover
 {
   color: forestgreen;
 }
+
+body > div.voltar > a > i
+  {
+    color: black;
+    margin-left: 2em;
+    margin-top: 1em;
+  }
