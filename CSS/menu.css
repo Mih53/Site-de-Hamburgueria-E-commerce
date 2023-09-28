@@ -20,7 +20,7 @@
   .topnav a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: #f7f6f6;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -105,22 +105,60 @@
   color: #111;
   transition: all 0.3s ease-out;
 }
-
-body > footer > div > div > a.btn.instagram > div,
-body > footer > div > div > a.btn.email > div,
-body > footer > div > div > a.btn.facebook > div,
+body > footer > div > div > a.btn.instagram > div
+{
+  margin-left: 1em;
+  margin-top: 1em;
+  color: #7e2828;
+}
+body > footer > div > div > a.btn.email > div
+{
+  margin-left: 1em;
+  margin-top: 1em;
+  color: #5629aa;
+}
+body > footer > div > div > a.btn.facebook > div
+{
+  margin-left: 1em;
+  margin-top: 1em;
+  color: #349217;
+}
 body > footer > div > div > a.btn.github > div
 {
   margin-left: 1em;
   margin-top: 1em;
-  color: rgb(166, 231, 140);
+  color: #b8a53a;
 }
-body > footer > div > div > a.btn.instagram > div:hover,
-body > footer > div > div > a.btn.email > div:hover,
-body > footer > div > div > a.btn.facebook > div:hover,
+
+
+body > footer > div > div > a.btn.instagram > div:hover
+{
+  color: #7e2828;
+  transition: all 0.7s ease-out;
+  margin-left: 2em;
+  margin-top: 0;
+}
+
+body > footer > div > div > a.btn.email > div:hover
+{
+  color: #5629aa;
+  transition: all 0.7s ease-out;
+  margin-left: 2em;
+  margin-top: 0;
+}
+
+body > footer > div > div > a.btn.facebook > div:hover
+{
+  color: #349217;
+  transition: all 0.7s ease-out;
+  margin-left: 2em;
+  margin-top: 0;
+}
+
+
 body > footer > div > div > a.btn.github > div:hover
 {
-  color: rgb(51, 255, 0);
+  color: #b8a53a;
   transition: all 0.7s ease-out;
   margin-left: 2em;
   margin-top: 0;
@@ -153,9 +191,6 @@ body > footer > div > div > a.btn.github > div > span
   transition: all 0.5s ease-out;
 }
 
-.instagram:hover span{
-  color: #5684e6;
-}
 
 body > footer > div > div:nth-child(2) > p
 {

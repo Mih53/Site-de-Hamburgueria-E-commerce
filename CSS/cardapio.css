@@ -8,6 +8,7 @@
   .flex-container {
     display: flex;
     flex-wrap: nowrap;
+    background-color: black;
     }
   
   .flex-container > div {
@@ -60,8 +61,10 @@
   margin-left: 0.5em;
   margin-top: 1em;
   font-size: 25px;
+  color: #dddcdc;
 
  }
+ body > section > div.flex-container > div > h1,
  body > section > div.flex-container > div > p
  {
   color: rgb(121, 207, 35);
@@ -69,3 +72,37 @@
   margin-bottom: 1em;
 }
 
+
+@media screen and (max-width: 600px) 
+  {
+  
+    .flex-container 
+    {
+    display: inline-block;
+    flex-wrap: nowrap;
+    margin-left: 3em;
+  }
+  body > section
+  {
+    background-color: black;
+  }
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  .flex-container 
+    {
+    display: inline-block;
+    flex-wrap: nowrap;
+    margin-left: 3em;
+  }
+  body > section
+  {
+    background-color: black;
+  }
+  body > section > div:nth-child(2) > div:nth-child(1)
+  {
+    margin-right: 19em;
+
+  }
+}
