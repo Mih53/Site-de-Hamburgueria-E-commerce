@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Source+Code+Pro:ital,wght@0,400;1,200;1,400&display=swap');* 
 
 * {
     margin: 0;
@@ -35,9 +36,10 @@
   .localizacao .unidades span
   {
     font-size: 50px;
-    margin-left: 12em;
+    margin-left: 10em;
     color: #dddcdc;
     line-height: 3em;
+    font-family: 'Dancing Script', cursive;
   }
 
   body > section > div > div
@@ -48,6 +50,7 @@
   {
     background-color: rgb(0, 0, 0);
     color: #dddcdc;
+    font-family: 'Dancing Script', cursive;
   }
   body > section > div > div > img
   {
@@ -82,6 +85,7 @@
     font-weight: bold;
     color: #dddcdc;
     opacity: 0.8;
+    font-family: 'Dancing Script', cursive;
   }
   body > section > div.flex-container > div > button > a:hover 
   {

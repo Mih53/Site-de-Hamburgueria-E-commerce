@@ -1,16 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Source+Code+Pro:ital,wght@0,400;1,200;1,400&display=swap');* 
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     /*font-family*/
   }
-
-  body > div.texto > p
+  body > section
   {
-    font-size: 20px;
-    text-align: center;
-    line-height: 35px;
-
+    background-color: black;
+  }
+  body > div
+  {
+    background-color: black;
+    color: #dddcdc;
   }
 
   .flex-container {
@@ -25,9 +28,10 @@
     margin: 10px;
     text-align: center;
     line-height: 55px;
-    font-size: 20px;
-    background-color: rgba(125, 250, 125, 0.1);
-    color: #011807
+    font-size: 30px;
+    background-color: rgb(15, 13, 15);
+    color: #dddcdc;
+    font-family: 'Dancing Script', cursive;
   }
 
   body > div.texto > div > div:nth-child(1)
@@ -97,14 +101,84 @@ body > div.texto > p:nth-child(2)
 }
 body > div.texto > h2
 {
-    margin-top: 2em;
     text-align: center;
     font-size: 40px;
+    line-height: 195px;
 }
 
 body > div.texto > p
 {
-    margin-top: 3em;
     font-size: 20px;
     text-align: center;
+    line-height: 35px;
+    color: #dddcdc;
+}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }

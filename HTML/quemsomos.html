@@ -16,49 +16,63 @@
         <a href="/HTML/cadastro.html">Cadastro</a>
         <a href="/HTML/cardapio.html">Cardápio</a>
         <a href="/HTML/localizacao.html">Localização</a>
-        <a href="#pedido">Pedido</a>
+        <a href="/HTML/pedido.html">Pedido</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>
-      </div>
+    </div>
 
-    <div class="Banner">
-        <div class="img">
-            <img src="/IMG/DELICIA DE SABORES 4.png" alt="5 Terre">
-        </div>
+    <section class="Banner">
+        <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <img src="/IMG/Aniversariante02.png" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <img src="/IMG/Aniversariante01.png" style="width:100%">
+            
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <img src="/IMG/1.jpg" style="width:100%">
+
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>      
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div> 
+    </section>
+
+    <div class="texto">
+        <h2>Bem-vindo à nossa Hamburgueria Online</h2>
+        <p>O seu destino virtual para uma experiência culinária de dar água na boca! </br>
+            Somos apaixonados por hambúrgueres deliciosos e acreditamos que cada mordida deve ser uma explosão de sabores.
+        </br>Aqui, transformamos os ingredientes mais frescos em obras-primas gastronômicas que irão satisfazer seus desejos mais vorazes. </p>
         
-        <div class="img">
-            <img src="/IMG/DELICIA DE SABORES 4.png" alt="Norther Lights">
+        <div class="flex-container">
+            <div>
+                <h2>Missão:</h2>
+                    <p>Nossa missão é proporcionar aos nossos clientes uma experiência gastronômica inigualável, entregando hambúrgueres feitos com ingredientes de alta qualidade e preparados com amor e dedicação. Queremos ser a primeira escolha quando se trata de hambúrgueres deliciosos e convenientes, oferecendo conveniência e sabor excepcionais em cada pedido.
+                    </p>
+            </div>
+            <div>
+                <h2>Visão:</h2>
+                    <p>Nossa visão é tornar-se a principal referência em hambúrgueres online, criando laços fortes com nossos clientes e espalhando a paixão por hambúrgueres em todo lugar. Queremos ser reconhecidos não apenas pela qualidade excepcional dos nossos produtos, mas também pela excelência no atendimento ao cliente e pela inovação constante em nosso cardápio.</p>
+                
+            </div>
+            <div>
+                <h2>Valores:</h2>
+                    <p>Qualidade Inegociável: Comprometemo-nos a utilizar apenas os ingredientes mais frescos e de alta qualidade em nossos hambúrgueres. Não abrimos mão da excelência em nosso cardápio.</p><br>
+                
+            </div>  
         </div>
     </div>
-    <div class="voltar">
-        <a href="/HTML/cadastro.html"><i class="fa-solid fa-arrow-left fa-2x"></i></a>
-    </div>
-
-<div class="texto">
-    <h2>Bem-vindo à nossa Hamburgueria Online</h2>
-     <p>O seu destino virtual para uma experiência culinária de dar água na boca! </br>
-        Somos apaixonados por hambúrgueres deliciosos e acreditamos que cada mordida deve ser uma explosão de sabores.
-    </br>Aqui, transformamos os ingredientes mais frescos em obras-primas gastronômicas que irão satisfazer seus desejos mais vorazes. </p>
-    
-    <div class="flex-container">
-        <div>
-            <h2>Missão:</h2>
-                <p>Nossa missão é proporcionar aos nossos clientes uma experiência gastronômica inigualável, entregando hambúrgueres feitos com ingredientes de alta qualidade e preparados com amor e dedicação. Queremos ser a primeira escolha quando se trata de hambúrgueres deliciosos e convenientes, oferecendo conveniência e sabor excepcionais em cada pedido.
-                </p>
-        </div>
-        <div>
-            <h2>Visão:</h2>
-                <p>Nossa visão é tornar-se a principal referência em hambúrgueres online, criando laços fortes com nossos clientes e espalhando a paixão por hambúrgueres em todo lugar. Queremos ser reconhecidos não apenas pela qualidade excepcional dos nossos produtos, mas também pela excelência no atendimento ao cliente e pela inovação constante em nosso cardápio.</p>
-            
-        </div>
-        <div>
-            <h2>Valores:</h2>
-                <p>Qualidade Inegociável: Comprometemo-nos a utilizar apenas os ingredientes mais frescos e de alta qualidade em nossos hambúrgueres. Não abrimos mão da excelência em nosso cardápio.</p><br>
-            
-        </div>  
-    </div>
-</div>
 
     <footer>
         <div class="page">
@@ -100,9 +114,7 @@
         </div>
     </footer>
 
-
-
-<script>
+    <script>
     function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
@@ -112,4 +124,35 @@
     }
   }
 
-  </script>
+  let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+    </script>
+</body>
+</html>

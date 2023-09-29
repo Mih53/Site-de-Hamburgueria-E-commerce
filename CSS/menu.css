@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Source+Code+Pro:ital,wght@0,400;1,200;1,400&display=swap');* 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     /*font-family*/
     }
-    
+    body
+    {
+      font-family: 'Source Code Pro', monospace;
+    }
     body > div.Banner > div:nth-child(1) > img, body > div.Banner > div:nth-child(2) > img
     {
       float: left;
@@ -104,6 +108,10 @@
   line-height: 60px;
   color: #111;
   transition: all 0.3s ease-out;
+}
+body > footer
+{
+  font-family: 'Dancing Script', cursive;
 }
 body > footer > div > div > a.btn.instagram > div
 {
