@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*font-family*/
+
   }
   .flex-container {
     display: flex;
@@ -39,7 +39,8 @@
     margin-left: 10em;
     color: #dddcdc;
     line-height: 3em;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
   }
 
   body > section > div > div

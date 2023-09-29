@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Source+Code+Pro:ital,wght@0,400;1,200;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body > section
+  {
+    background-color: black;
+  }
+  body > section > span
+  {
+    color: #dddddd;
+    font-size: 2em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+    margin-left: 15em;
+    line-height: 3em;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .flex-container > div {
+    background-color: black;
+    width: 10em;
+    margin: 10px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 30px;
+  }
+
+  body > section > div > div > img
+  {
+    width: 300px;
+    margin-top: 1em;
+  }
+  
+  body > section > div > div > span,
+  body > section > div > div > p,
+  body > section > div > div > h1
+  {
+    color: #dddddd;
+  }
+  .flex-container02 {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .flex-container02 > div {
+    background-color: black;
+    width: 50em;
+    margin: 10px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 30px;
+  }
+
+  body > section > div > div.flex-container02 > h1
+  {
+    margin-left: 5em;
+  }

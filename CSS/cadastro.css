@@ -1,20 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans:ital,wght@0,100;0,200;1,300&family=Source+Code+Pro:ital,wght@0,400;1,200;1,400&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*font-family*/
   }
 
     body > div.cadastro > form > div
     {
-      margin-top: -10em;
+      margin-top: -8em;
     }
   .container {
     padding: 16px;
     background-color: black;
     margin-top: 14em;
-
   }
   
   body > div.cadastro
@@ -32,7 +31,8 @@
     margin-bottom: 1em;
     font-size: 60px;
     color: #dddd;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
   }
   
   input[type=email], input[type=password], input[type=text] , input[type=number], input[type=psw-repeat]  {
@@ -42,6 +42,7 @@
     display: inline-block;
     border: solid 1px color rgb(221, 220 220);
     background-color: black;
+    font-family: 'Source Code Pro', monospace;
   }
   
   input[type=email]:focus, input[type=password],  input[type=text] , input[type=number], input[type=psw-repeat]:focus {
@@ -59,6 +60,8 @@
     width: 100%;
     opacity: 0.9;
     font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
   }
   
   .registerbtn:hover {
@@ -68,5 +71,7 @@
   .signin {
     background-color: #f1f1f1;
     text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
   }
  
