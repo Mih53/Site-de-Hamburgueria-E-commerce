@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Source+Code+Pro:ital,wght@0,400;1,200;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 37em;
+  background-color: black;
+  color: #dddd;
+}
+
+.tab p
+{
+    margin-left: 2em;
+    margin-top: 1em;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: #dddd;
+  padding: 22px 16px;
+  width: 100%;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 20px
+}
+body > div.tab > button:nth-child(2)
+{
+    border: solid 1px color rgb(220, 221, 220);
+}
+
+.tab button:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.tab button.active {
+  background-color: #ccc;
+  color: black;
+}
+#menu_pag > div > hr
+{
+    color: rgb(220, 221, 220);
+}
+
+#menu_pag > div > img
+{
+    margin-left: 5em;
+    width: 250px;
+}
+
+/*----------------------------- Pag Cartões*/
+
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+  }
+  
+  .col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+  }
+  
+  .col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+  }
+  
+  .col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+  }
+  
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 0 16px;
+  }
+  #pix > div > div,
+  #debito > div
+  {
+    background-color: black;
+  }
+  .container {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+  }
+  
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+  
+  .btn {
+    background-color: #dddd;
+    color: black;
+    padding: 12px;
+    margin: 10px 15em;
+    border-style: solid 1px color #dddd;
+    width: 20em;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .btn:hover {
+    background-color: black;
+    color: #dddd;
+  }
+  
+  a {
+    color: #dddddd;
+  }
+  
+  hr {
+    border: 1px solid lightgrey;
+  }
+  
+  span.price {
+    float: right;
+    color: grey;
+  }
+
+  @media (max-width: 800px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+  }
+
+
+  #pix > div > div > div.container
+  {
+    height: 10em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+    background-color: black;
+    color: #ddd;
+  }
+  #pix > div > div > div.container > form > div > div > h3
+  {
+    margin-top: 2em;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  #pix > div > div > div.container > form > div > div > p
+  {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 1em;
+  }
+
+  #pix > div > div > div.row > div > div
+  {
+    height: 23em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+    background-color: black;
+    color: #ddd;
+  }
+  #pix > div > div > div.row > div > div > h4
+  {
+    margin-top: 1em;
+    font-size: 25px;
+  }
+
+  #pix > div > div > div.row > div > div > p
+  {
+    margin-top: 1em;
+    font-size: 20px;
+  }
+
+  #pix > div > div > div.row > div > div > hr,
+  #pix > div > div > div.row > div > div > p:nth-child(7)
+  {
+    margin-top: 1em;
+  }
+
+  /*Débito*/
+
+  #debito > div > div.col-75 > div,
+  #debito
+  {
+    background-color: black;
+    color: #ddd;
+  }
+
+  #debito > div > div.col-75 > div > form > div > div:nth-child(1) > h3
+  {
+    margin-top: 1em;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  #debito > div > div.col-75 > div > form > div > div > label{
+    font-size: 20px;
+    margin-top: 1EM;
+  }
+
+  #debito > div > div.col-75 > div > form > div > div:nth-child(2) > h3
+  {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1EM;
+  }
+
+  #debito > div > div.col-75 > div > form > div > div:nth-child(2) > label:nth-child(2),
+  #debito > div > div.col-75 > div > form > div > div:nth-child(2) > div.icon-container
+  {
+    font-size: 20px;
+    text-align: center;
+  }
+  #debito > div > div.col-25 > div > h4
+  {
+    font-size: 30px;
+  }
+
+  #debito > div > div.col-25 > div
+  {
+    height: 14em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+    background-color: black;
+    color: #ddd;
+    font-size: 20px;
+}
+
+#debito > div > div.col-25 > div > p,
+#debito > div > div.col-25 > div > hr
+{
+    margin-top: 1em;
+}
+
+#debito > div > div.col-75 > div > form > div > div:nth-child(2) > div.row > label
+{
+    margin-left: 1.5em;
+    margin-top: 1em;
+}
+
+
+/*Crédito*/
+
+#credito > div > div.col-75 > div,
+#credito
+{
+  background-color: black;
+  color: #ddd;
+}
+
+#credito > div > div.col-75 > div > form > div > div:nth-child(1) > h3
+{
+  margin-top: 1em;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+#credito > div > div.col-75 > div > form > div > div > label{
+  font-size: 20px;
+  margin-top: 1EM;
+}
+
+#credito > div > div.col-75 > div > form > div > div:nth-child(2) > h3
+{
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1EM;
+}
+
+#credito > div > div.col-75 > div > form > div > div:nth-child(2) > label:nth-child(2),
+#credito > div > div.col-75 > div > form > div > div:nth-child(2) > div.icon-container
+{
+  font-size: 20px;
+  text-align: center;
+}
+#credito > div > div.col-25 > div > h4
+{
+  font-size: 30px;
+}
+
+#credito > div > div.col-25 > div
+{
+  height: 14em;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 200;
+  background-color: black;
+  color: #ddd;
+  font-size: 20px;
+}
+
+#credito > div > div.col-25 > div > p,
+#credito > div > div.col-25 > div > hr
+{
+  margin-top: 1em;
+}
+
+#credito > div > div.col-75 > div > form > div > div:nth-child(2) > div.row > label
+{
+    margin-left: 1.5em;
+    margin-top: 1em;
+}
+
+ 
