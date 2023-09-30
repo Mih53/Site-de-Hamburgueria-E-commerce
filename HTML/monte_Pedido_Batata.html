@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"type="text/css"  href="/CSS/reset.css">
+    <link rel="stylesheet" type="text/css" href="/CSS/monte_Pedido_Batata.css">
+    <link rel="stylesheet" type="text/css" href="/CSS/menu.css">
+    <link rel="stylesheet" type="text/css" href="/fontawesome-free-6.4.2-web/css/all.min.css">
+    <title>Quem Somos</title>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="/HTML/quemsomos.html">Quem Somos</a>
+        <a href="/HTML/login.html">Login</a>
+        <a href="/HTML/cadastro.html">Cadastro</a>
+        <a href="/HTML/cardapio.html">Cardápio</a>
+        <a href="/HTML/localizacao.html">Localização</a>
+        <a href="/HTML/pedido.html" class="active">Pedido</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <section class="batata">
+        <span>Monte o seu Pedido</span>
+            <div class="flex-container">
+                <div class="img_batata">
+                    <img src="/IMG/batata.png" alt="Batata de Desenho">
+                    <span>Batata Tradicional</span>
+                    <p>500 gramas</p>
+                </div>
+                <div class="flex-container">
+                   <div class="ingredientesAdicionais">
+                    <img src="/IMG/batatacomCheddar.png" alt="" style="width: 250px;">
+                        <p>Batata com Bacon </p>
+                        <button type="button">Adicionar</button>
+                        <button type="button">Remover</button>
+
+                        <img src="/IMG/batataTemperada.png" alt="">
+                        <p>Batata Temperada</p>
+                        <button type="button">Adicionar</button>
+                        <button type="button">Remover</button>
+
+                        <img src="/IMG/batatacomCheddar.png" alt="" style="width: 250px;">
+                        <p>Batata com Cheddar</p>
+                        <button type="button">Adicionar</button>
+                        <button type="button">Remover</button>
+
+                    </div>   
+                </div>
+            </div>
+
+            <div class="botaoAvançar">
+                <button>Avançar</button>
+            </div>
+
+
+            <div class="imgburguer">
+                <img src="/IMG/hamburguer_desmontado-removebg-preview.png" alt="">
+            </div>
+     </section>
+
+
+    <footer>
+        <div class="page">
+            <div class="box">
+            <a href="https://www.instagram.com/mihh_amaral/"  target="_blank" class="btn instagram">
+                <div class="icones">
+                    <i class="fa-brands fa-instagram fa-2x"></i>
+                    <span>Instagram</span>
+                </div>
+            </a>
+
+            <a href="#" class="btn email">
+                <div class="icones">
+                    <i class="fa-solid fa-envelope  fa-2x"></i>
+                    <span>E-mail</span>
+                </div>
+               
+            </a>
+
+            <a href="https://www.facebook.com/milena.amaral.737/" target="_blank" class="btn facebook">
+                <div class="icones">
+                    <i class="fa-brands fa-facebook  fa-2x"></i>
+                    <span>Facebook</span>
+                </div>
+               
+            </a>
+
+            <a href="https://github.com/Mih53/Site_Comida.git" target="_blank" class="btn github">
+                <div class="icones">
+                    <i class="fa-brands fa-github  fa-2x"></i>
+                    <span>Git Hub</span>
+                </div>
+                
+            </a>
+            </div>
+            <div>
+                <p>© Copyright 2023 - Milena Amaral</p>
+            </div>
+        </div>
+    </footer>
+
+<script>
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+
+</script>
+
+</body>
+</html>
