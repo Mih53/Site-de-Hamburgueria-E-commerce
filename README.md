@@ -1,6 +1,5 @@
 <<<<<<< HEAD
 # site
-#Hamburgueria
 =======
 # site - Hambrugueria
 # 1 etapa: Front-End
