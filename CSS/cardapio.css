@@ -25,6 +25,7 @@
     text-align: center;
     font-family: 'Dancing Script', cursive;
   }
+  
   body > section > div:nth-child(1) > div:nth-child(1),
   body > section > div:nth-child(2) > div:nth-child(1)
   {
@@ -100,15 +101,22 @@
   
     .flex-container 
     {
-    display: inline-block;
-    flex-wrap: nowrap;
-    margin-left: 3em;
+      display: inline-block;
+      flex-wrap: nowrap;
+      margin-left: 3em;
+    }
+    body > section
+    {
+      background-color: black;
+    }
+    body > section > div.textomenu > span
+    {
+      margin-left: 1em;
+      line-height: 3em;
+      font-size: 35px;
+
+    }
   }
-  body > section
-  {
-    background-color: black;
-  }
-}
 
 
 @media screen and (min-width: 601px) and (max-width: 1200px) {
@@ -122,9 +130,29 @@
   {
     background-color: black;
   }
-  body > section > div:nth-child(2) > div:nth-child(1)
+  body > section > div:nth-child(3) > div:nth-child(1)
   {
-    margin-right: 19em;
-
+    margin-left: 2em;
   }
+  body > section > div.textomenu > span
+  {
+    margin-left: 3em;
+    line-height: 3em;
+    font-size: 50px;
+  }
+
+  body > section > div > div
+  {
+    height: 20em;
+  }
+  body > section > div > div > img
+  {
+    width: 70%;
+  }
+  body > section > div > div > h2,
+  body > section > div > div > p
+  {
+    font-size: 20px;
+  }
+  
 }

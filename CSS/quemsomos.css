@@ -33,6 +33,10 @@
     color: #dddcdc;
     font-family: 'Dancing Script', cursive;
   }
+  #myTopnav > a:nth-child(8)
+  {
+    margin-left: 21em;
+  }
 
   body > div.texto > div > div:nth-child(1)
   {
@@ -60,6 +64,10 @@
       line-height: 25px;
   
     }
+    #myTopnav > a:nth-child(8)
+    {
+      margin-left: 0;
+    }
     .flex-container {
     display: inline-block;
     flex-wrap: nowrap;
@@ -80,6 +88,10 @@
       text-align: justify;
       line-height: 25px;
   
+    }
+    #myTopnav > a:nth-child(8)
+    {
+      margin-left: 0;
     }
     .flex-container {
     display: inline-block;

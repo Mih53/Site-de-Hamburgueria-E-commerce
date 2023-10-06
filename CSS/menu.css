@@ -69,12 +69,13 @@
 
 
   .page{
-    height: 30vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: linear-gradient(220deg, rgb(159, 245, 138) 25%, rgb(154, 243, 191) 74%);
+    padding-top: 5em;
   }
 
   a{
