@@ -32,6 +32,7 @@
     font-size: 60px;
     color: #dddd;
     font-family: 'Josefin Sans', sans-serif;
+    text-transform: capitalize;
     font-weight: 200;
   }
   
@@ -62,10 +63,13 @@
     font-size: 20px;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 200;
+    text-transform: capitalize;
   }
   
   .registerbtn:hover {
     opacity: 1;
+    background-color: #2ae09e;
+    color: black;
   }
 
   .signin {
@@ -73,5 +77,6 @@
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 200;
+    text-transform: capitalize;
   }
  
