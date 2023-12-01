@@ -69,13 +69,13 @@
 
 
   .page{
-    height: 50vh;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: linear-gradient(220deg, rgb(159, 245, 138) 25%, rgb(154, 243, 191) 74%);
-    padding-top: 5em;
+    padding-top: 1em;
   }
 
   a{
@@ -101,7 +101,7 @@
 .box .btn .icon
 {
   display: inline-block;
-  height: 60px;
+  height: 40px;
   width: 60px;
   text-align: center;
   border-radius: 50px;

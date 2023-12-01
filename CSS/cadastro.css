@@ -44,6 +44,7 @@
     border: solid 1px color rgb(221, 220 220);
     background-color: black;
     font-family: 'Source Code Pro', monospace;
+    color: #dddd;
   }
   
   input[type=email]:focus, input[type=password],  input[type=text] , input[type=number], input[type=psw-repeat]:focus {
